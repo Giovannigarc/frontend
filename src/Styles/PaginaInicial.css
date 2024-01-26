@@ -1,0 +1,65 @@
+.fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: linear-gradient(45deg, #231f1d, #170f12, #1e1546, #8e18a8);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.navbar p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-align: right;
+  margin: 10px;
+}
+
+.content {
+  animation: fadeIn 2s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.content h2 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+}
+
+.content button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.content button:hover {
+  background-color: #45a049;
+}
